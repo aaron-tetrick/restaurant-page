@@ -1,3 +1,33 @@
-h1 {
-    color: blue;
+* {
+
+}
+
+:root {
+    --primary: #853617;
+    --secondary: #96816c;
+    --tertiary:  #fcf5eb;
+}
+
+#content {
+}
+
+header {
+    background-image: url(./antico-bkgrd.jpg);
+    width: 100vw;
+    height: 25vh;
+    filter: grayscale(40%);
+    background-position: 20% 54%;
+}
+
+.title {
+    color: var(--primary);
+    text-align: center;
+}
+
+nav {
+    color: var(--tertiary);
+}
+
+nav ul {
+    list-style: none;
 }
