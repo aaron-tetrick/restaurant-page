@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
+body {
+    background-color: var(--tertiary);
+}
 :root {
     --primary: #853617;
     --secondary: #96816c;
@@ -57,10 +58,18 @@ nav ul li {
 
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 50px;
+    gap: 300px;
+}
+
+
+.hours-div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
-    margin-top: 50px;
 }
 
 .hours {
@@ -69,6 +78,7 @@ main {
     color: var(--secondary);
     display: flex;
     margin-bottom: 0;
+   
 }
 
 .hours-list {
@@ -79,9 +89,10 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px 90px;
-    border: 2px solid black;
+    border: 5px black double;
     border-radius: 3px;
     margin-top: 0;
+    background-color: white;
 
 }
 
@@ -90,6 +101,28 @@ main {
 
 }
 
+.img-div {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.chef-img {
+    width: 300px;
+    opacity: 90%;
+    border-radius: 3px;
+}
+
+.quote {
+    font-family: "Catamaran", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: black 2px 3px 3px 3px;
+    padding: 15px;
+}
 /* PSUEDO ELEMENTS/CLASSES */
 nav ul li:hover {
     transition: 0.15s;

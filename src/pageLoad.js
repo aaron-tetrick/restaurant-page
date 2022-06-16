@@ -9,6 +9,7 @@ const pageLoad = () => {
     const contact = document.createElement('li');
 
     const main = document.createElement('main');
+    const hoursDiv = document.createElement('div');
     const hours = document.createElement('div');
     const h2 = document.createElement('h2');
     const hoursList = document.createElement('ul');
@@ -20,6 +21,12 @@ const pageLoad = () => {
     const sat = document.createElement('li');
     const sun = document.createElement('li');
 
+    const imgDiv = document.createElement('div');
+    const quote = document.createElement('p');
+    const chefImg = document.createElement('img');
+
+    chefImg.src = "/pizza-chef.jpg";
+
 
 
     title.innerText = "Antico";
@@ -29,8 +36,12 @@ const pageLoad = () => {
     header.classList.add("header");
     ul.classList.add("nav-ul");
     home.classList.add("page");
+    hoursDiv.classList.add("hours-div")
     hours.classList.add("hours");
     hoursList.classList.add("hours-list");
+    imgDiv.classList.add("img-div");
+    chefImg.classList.add("chef-img");
+    quote.classList.add("quote");
     
 
     home.innerText = "Home";
@@ -46,6 +57,7 @@ const pageLoad = () => {
     sat.innerText = "Saturday..........11AM-10PM"
     sun.innerText = "Sunday..........11AM-9PM"
 
+    quote.innerText = "Our award-winning chefs craft the finest Italian cuisine in all of Atlanta. Come visit us to find out why Antico is a name synonymous with pizza greatness."
     
     ul.appendChild(home);
     ul.appendChild(menu);
@@ -57,9 +69,14 @@ const pageLoad = () => {
     content.appendChild(main);
 
    
+   
+    main.appendChild(hoursDiv);
+    main.appendChild(imgDiv);
+    imgDiv.appendChild(chefImg);
+    imgDiv.appendChild(quote);
+    hoursDiv.appendChild(hours);
+    hoursDiv.appendChild(hoursList);
 
-    main.appendChild(hours);
-    main.appendChild(hoursList)
     hoursList.appendChild(mon);
     hoursList.appendChild(tue);
     hoursList.appendChild(wed);
