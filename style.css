@@ -133,10 +133,10 @@ nav ul li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; 
-    width: 85vw;
-    height: 522px;
+    width: 90vw;
+    height: 550px;
     background-color: white;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 3px;
     border: 5px black double;
     box-shadow: 0px 0px 15px 3px gray;
@@ -147,13 +147,13 @@ nav ul li {
     font-family: "Catamaran", sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
-    padding: 25px;
+    padding: 20px;
 }
 
 .pizza-div {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     height: 80%;
 }
 
@@ -162,8 +162,8 @@ nav ul li {
     flex-direction: column;
     align-items: flex-start;
     width: 33%; 
-    height: 80%;
-   
+    height: 90%;
+    padding: 0px 20px 50px 20px;
 }
 
 .menu-headers {
@@ -173,6 +173,7 @@ nav ul li {
     font-weight: 300;
     font-style: italic;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .red, .calzone {
@@ -180,7 +181,7 @@ nav ul li {
 }
 
 .food-divs {
-    border: 3px firebrick solid;
+    margin: 7px;
 }
 
 .menu-items {

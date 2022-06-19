@@ -1,5 +1,6 @@
 const createHome = () => {
     const content = document.getElementById('content');
+    const header = document.querySelector('.header');
     const title = document.querySelector('.title');
     const mainHome = document.createElement('main');
     const hoursDiv = document.createElement('div');
@@ -27,6 +28,8 @@ const createHome = () => {
     imgDiv.classList.add("img-div");
     chefImg.classList.add("chef-img");
     quote.classList.add("quote");
+
+    header.style['background-image'] = 'url(../antico-bkgrd.jpg)';
     
     title.innerText = "Antico";
     h2.innerText = "Hours";

@@ -4,7 +4,7 @@ import { createMenu } from './menu';
 import { createContact } from './contact';
 
 pageLoad();
-createMenu();
+createContact();
 
 const home = document.querySelector('.home');
 const menu = document.querySelector('.menu');
