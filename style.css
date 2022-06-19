@@ -13,6 +13,10 @@ body {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -63,10 +67,6 @@ nav ul li {
     width: 100vw;
     margin-top: 50px;
     gap: 300px;
-}
-
-.mainMenu {
-
 }
 
 .hours-div {
@@ -125,11 +125,83 @@ nav ul li {
     padding: 15px;
     font-style: italic;
 }
-/* PSUEDO ELEMENTS/CLASSES */
+
+
+/* MENU PAGE */
+.mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    width: 85vw;
+    height: 522px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 3px;
+    border: 5px black double;
+    box-shadow: 0px 0px 15px 3px gray;
+}
+
+.menu-title {
+    color: var(--primary);
+    font-family: "Catamaran", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 25px;
+}
+
+.pizza-div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 80%;
+}
+
+.white, .red, .calzone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%; 
+    height: 80%;
+   
+}
+
+.menu-headers {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    width: 100%;
+}
+
+.red, .calzone {
+    border-left: 5px double black;
+}
+
+.food-divs {
+    border: 3px firebrick solid;
+}
+
+.menu-items {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;    
+}
+
+
+.ingredients {
+    font-size: 1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+/* PSEUDO ELEMENTS/CLASSES */
 nav ul li:hover {
     transition: 0.15s;
     cursor: pointer;
     color: var(--tertiary);
     border-bottom: 2px solid var(--tertiary);
     filter: brightness(80%);
-} 
+}

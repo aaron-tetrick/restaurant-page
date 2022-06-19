@@ -1,6 +1,5 @@
-const content = document.getElementById('content');
-
 const pageLoad = () => {
+    const content = document.getElementById('content');
     const header = document.createElement('header');
     const title = document.createElement('h1');
     const nav = document.createElement('nav');

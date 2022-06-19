@@ -1,5 +1,6 @@
 const createHome = () => {
     const content = document.getElementById('content');
+    const title = document.querySelector('.title');
     const mainHome = document.createElement('main');
     const hoursDiv = document.createElement('div');
     const hours = document.createElement('div');
@@ -27,7 +28,7 @@ const createHome = () => {
     chefImg.classList.add("chef-img");
     quote.classList.add("quote");
     
-
+    title.innerText = "Antico";
     h2.innerText = "Hours";
     mon.innerText = "Monday..........11AM-9PM"
     tue.innerText = "Tuesday..........11AM-9PM"
