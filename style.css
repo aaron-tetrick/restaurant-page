@@ -221,13 +221,15 @@ nav ul li {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    width: 50%;
+    width: 70%;
     height: 90%;
     padding: 0px 75px;
     border-radius: 3px;
+    border: 5px double black;
 }
 
-.form ul {
+.form ul,
+.contact-ul {
     list-style-type: none;
     font-family: "Montserrat", sans-serif;
     font-size: 1.25rem;
@@ -242,11 +244,13 @@ nav ul li {
 }
 
 .form ul li input {
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 35px;
     border-radius: 3px;
     border: 1px solid white;
     margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1rem;
 }
 
 textarea {
@@ -261,23 +265,62 @@ textarea {
 }
 
 .submit-btn {
-    width: 5rem;
+    width: 8rem;
     height: 30px;
     border-radius: 3px;
     border: #96816c;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.contact-container-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .contact-div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: olive;
-    width: 50%;
+    background-color: var(--secondary);
+    width: 70%;
+    height: 90%;
+    padding: 0px 75px 0px 75px;
+    border-radius: 3px;
+    border: 5px double black;
 }
 
+.contact-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 45px;
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.contact-ul li {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.address-img {
+    width: 400px;
+    height: 200px;
+    border: 0;
+    margin-bottom: 40px;
+}
 
 /* PSEUDO ELEMENTS/CLASSES */
 nav ul li:hover {
@@ -286,4 +329,25 @@ nav ul li:hover {
     color: var(--tertiary);
     border-bottom: 2px solid var(--tertiary);
     filter: brightness(80%);
+}
+
+.phone::before {
+    content: url(./icons/phone.svg);
+    position: absolute;
+    top: 42px;
+    left: 145px;
+}
+
+.email::before {
+    content: url(./icons/mail.svg);
+    position: absolute;
+    top: 116px;
+    left: 73px;
+}
+
+.address::before {
+    content: url(./icons/map-pin.svg);
+    position: absolute;
+    top: 187px;
+    left: 0px;
 }
