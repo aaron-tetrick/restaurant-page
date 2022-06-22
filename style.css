@@ -81,7 +81,7 @@ nav ul li {
     color: var(--secondary);
     display: flex;
     margin-bottom: 0;
-   
+    
 }
 
 .hours-list {
@@ -96,7 +96,7 @@ nav ul li {
     border-radius: 3px;
     margin-top: 0;
     background-color: white;
-
+    box-shadow: 0px 0px 15px 3px gray;
 }
 
 .hours-list li {
@@ -115,6 +115,7 @@ nav ul li {
     width: 300px;
     opacity: 90%;
     border-radius: 3px;
+    box-shadow: 0px 0px 15px 3px gray;
 }
 
 .quote {
@@ -203,29 +204,32 @@ nav ul li {
 .mainContact {
     display: flex;
     justify-content: center; 
-    width: 100%;
+    width: 90%;
     height: 550px;
     margin-top: 40px;
 }
 
-.form-div {
+.form-div,
+.contact-container-div  {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-.form {
+.form, 
+.contact-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    width: 70%;
+    width: 75%;
     height: 90%;
     padding: 0px 75px;
     border-radius: 3px;
     border: 5px double black;
+    box-shadow: 0px 0px 15px 3px gray;
 }
 
 .form ul,
@@ -247,10 +251,11 @@ nav ul li {
     width: 400px;
     height: 35px;
     border-radius: 3px;
-    border: 1px solid white;
+    border: none;
     margin-bottom: 10px;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 textarea {
@@ -261,7 +266,7 @@ textarea {
     padding: 5px;
     font-family: "Montserrat", sans-serif;
     border-radius: 3px;
-    border: 1px white solid;
+    border: none;
 }
 
 .submit-btn {
@@ -278,24 +283,8 @@ textarea {
     font-size: 1rem;
 }
 
-.contact-container-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
 .contact-div {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary);
-    width: 70%;
-    height: 90%;
-    padding: 0px 75px 0px 75px;
-    border-radius: 3px;
-    border: 5px double black;
 }
 
 .contact-ul {
@@ -320,6 +309,7 @@ textarea {
     height: 200px;
     border: 0;
     margin-bottom: 40px;
+    border-radius: 3px;
 }
 
 /* PSEUDO ELEMENTS/CLASSES */
@@ -335,19 +325,28 @@ nav ul li:hover {
     content: url(./icons/phone.svg);
     position: absolute;
     top: 42px;
-    left: 145px;
+    left: 130px;
 }
 
 .email::before {
     content: url(./icons/mail.svg);
     position: absolute;
     top: 116px;
-    left: 73px;
+    left: 60px;
 }
 
 .address::before {
     content: url(./icons/map-pin.svg);
     position: absolute;
     top: 187px;
-    left: 0px;
+    left: -12px;
+}
+
+.submit-btn:hover {
+    background-color: var(--tertiary);
+    transition: 0.3s;
+}
+
+.submit-btn:focus {
+    background-color: white;
 }

@@ -69,9 +69,14 @@ const createContact = () => {
     mainContact.classList.add('mainContact');
     formDiv.classList.add('form-div');
     contactForm.classList.add('form');
+    nameLi.classList.add('name');
+    emailLi.classList.add('emailInput');
+    textarea.classList.add('textarea');
+    submitForm.classList.add('submit-btn');
+
     contactContainerDiv.classList.add('contact-container-div');
     contactDiv.classList.add('contact-div');
-    submitForm.classList.add('submit-btn');
+    
     contactUl.classList.add('contact-ul');
     phone.classList.add('phone');
     email.classList.add('email');
