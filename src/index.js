@@ -14,19 +14,16 @@ home.addEventListener('click', selectHome);
 menu.addEventListener('click', selectMenu);
 contact.addEventListener('click', selectContact);
 
+
+
 function selectHome() {
     const mainMenu = document.querySelector('.mainMenu');
     const mainContact = document.querySelector('.mainContact');
-    
-    console.log('You clicked home');
-
     if (menu.className.includes('page')) {
         mainMenu.remove();
     } else if (contact.className.includes('page')) {
         mainContact.remove();
     } else if (home.className.includes('page')) {
-        console.log("Already on home page");
-        console.log(home.className, "|", menu.className, "||", contact.className);
         return;
     }
 
@@ -40,16 +37,11 @@ function selectHome() {
 function selectMenu() {
     const mainHome = document.querySelector('.mainHome');
     const mainContact = document.querySelector('.mainContact');
-    
-    console.log('You clicked menu');
-
     if (home.className.includes('page')) {
         mainHome.remove();
     } else if (contact.className.includes('page')) {
         mainContact.remove();
     } else if (menu.className.includes('page')) {
-        console.log("Already on menu page");
-        console.log(home.className, "|", menu.className, '||', contact.className);
         return;
     }
 
@@ -63,16 +55,11 @@ function selectMenu() {
 function selectContact() {
     const mainHome = document.querySelector('.mainHome');
     const mainMenu = document.querySelector('.mainMenu');
-
-    console.log('You clicked contact');
-
     if (home.className.includes('page')) {
         mainHome.remove();
     } else if (menu.className.includes('page')) {
         mainMenu.remove();
     } else if (contact.className.includes('page')) {
-        console.log("Already on contact page");
-        console.log(home.className, "|", menu.className, "||", contact.className);
         return;
     }
 

@@ -1,8 +1,10 @@
 const createMenu = () => {
     const title = document.querySelector('.title');
     const content = document.getElementById('content');
-    const mainMenu = document.createElement('main');
     const header = document.querySelector('.header');
+    
+    const mainMenu = document.createElement('main');
+
     const menuTitle = document.createElement('h2');
     const pizzaDiv = document.createElement('div');
     const white = document.createElement('div');
@@ -158,9 +160,8 @@ const createMenu = () => {
     calzoneIngredients2.classList.add('ingredients');
     calzoneIngredients3.classList.add('ingredients');
 
-    header.style['background-image'] = 'url(../pizza-stove.jpg)';
+    header.style['background-image'] = 'url(../imgs/pizza-stove.jpg)';
     header.style['background-position'] = '17% 50%';
-    
 
     mainMenu.appendChild(menuTitle);
     mainMenu.appendChild(pizzaDiv);
@@ -223,7 +224,5 @@ const createMenu = () => {
 
     content.appendChild(mainMenu);
 };
-
-
 
 export { createMenu }

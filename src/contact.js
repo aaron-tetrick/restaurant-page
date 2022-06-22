@@ -3,7 +3,9 @@ const createContact = () => {
     const content = document.getElementById('content');
     const nav = document.querySelector('nav ul')
     const header = document.querySelector('header');
+
     const mainContact = document.createElement('main');
+    
     const formDiv = document.createElement('div')
     const contactForm = document.createElement('form');
     const contactContainerDiv = document.createElement('div');
@@ -13,6 +15,7 @@ const createContact = () => {
     const email = document.createElement('li')
     const address = document.createElement('li')
     const addressImg = document.createElement('iframe');
+
     const formUl = document.createElement('ul');
     const nameLi = document.createElement('li');
     const emailLi = document.createElement('li');
@@ -54,7 +57,6 @@ const createContact = () => {
     nameLabel.setAttribute('for', 'name');
     emailLabel.setAttribute('for', 'email');
     textareaLabel.setAttribute('for', 'msg');
-  
 
     title.innerText = "Contact";
     nameLabel.innerText = "Name:";
@@ -68,6 +70,7 @@ const createContact = () => {
 
     mainContact.classList.add('mainContact');
     formDiv.classList.add('form-div');
+
     contactForm.classList.add('form');
     nameLi.classList.add('name');
     emailLi.classList.add('emailInput');
@@ -83,15 +86,10 @@ const createContact = () => {
     address.classList.add('address');
     addressImg.classList.add('address-img');
 
-    header.style['background-image'] = 'url(../pizza-dough.jpeg)';
+    header.style['background-image'] = 'url(../imgs/pizza-dough.jpeg)';
     header.style['background-position'] = '49% 55%';
     header.style['filter'] = 'grayscale(50%)';
     nav.style['filter'] = 'brightness(150%)';
-
-    console.log(nav);
-    
-
-    
 
     nameLi.appendChild(nameLabel);
     nameLi.appendChild(nameInput);
@@ -114,17 +112,16 @@ const createContact = () => {
     contactUl.appendChild(phone);
     contactUl.appendChild(email);
     contactUl.appendChild(address);
-    
     contactDiv.appendChild(contactUl);
+
     contactDiv.appendChild(addressImg);
     contactContainerDiv.appendChild(contactDiv);
-    formDiv.appendChild(contactForm);
-
-
     mainContact.appendChild(contactContainerDiv);
+    
+    formDiv.appendChild(contactForm);
     mainContact.appendChild(formDiv);
-    content.appendChild(mainContact);
-}
 
+    content.appendChild(mainContact);
+};
 
 export { createContact }

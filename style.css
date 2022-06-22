@@ -1,11 +1,14 @@
+/*UNIVERSAL STYLINGS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--tertiary);
 }
+
 :root {
     --primary: #853617;
     --secondary: #96816c;
@@ -19,8 +22,9 @@ body {
     align-items: center;
 }
 
+/* HEADER STYLINGS */
 header {
-    background-image: url(./antico-bkgrd.jpg);
+    background-image: url(./imgs/antico-bkgrd.jpg);
     width: 100%;
     height: 25vh;
     filter: grayscale(40%);
@@ -56,10 +60,12 @@ nav ul li {
     padding: 3px;
     font-family: "Catamaran", sans-serif;
 }
+
 .page {
     border-bottom: 2px solid var(--tertiary);
 }
 
+/* HOME PAGE */
 .mainHome {
     display: flex;
     justify-content: center;
@@ -81,7 +87,6 @@ nav ul li {
     color: var(--secondary);
     display: flex;
     margin-bottom: 0;
-    
 }
 
 .hours-list {
@@ -101,7 +106,6 @@ nav ul li {
 
 .hours-list li {
     font-size: 30px;
-
 }
 
 .img-div {
@@ -126,7 +130,6 @@ nav ul li {
     padding: 15px;
     font-style: italic;
 }
-
 
 /* MENU PAGE */
 .mainMenu {
@@ -189,9 +192,8 @@ nav ul li {
     font-size: 1.5rem;
     font-style: normal;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
 }
-
 
 .ingredients {
     font-size: 1rem;
@@ -200,7 +202,7 @@ nav ul li {
     font-style: italic;
 }
 
-/* CONTACT PAGE STYLING */
+/* CONTACT PAGE */
 .mainContact {
     display: flex;
     justify-content: center; 
